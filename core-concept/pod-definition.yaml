@@ -7,11 +7,12 @@
 # spec is dictiomnary
 
 apiVersion: v1
-kind: pod
+kind: Pod
 namespace: development
 metadata:
   name: nginx
 spec:
   containers:
-    - name: nginx-container
-      image: nginx
+  - name: nginx-container
+    image: nginx:1.14.2
+    
