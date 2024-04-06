@@ -12,6 +12,8 @@ namespace: development
 metadata:
   name: nginx
   namespace: development
+  labels:
+    app: nginx
 spec:
   containers:
   - name: nginx-container

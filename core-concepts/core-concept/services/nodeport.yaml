@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+  namespace: development
+spec:
+  selector:
+    app:  nginx
+  ports:
+  - protocol: TCP  # You can change protocol if needed (e.g., UDP)
+    port: 80  # This is the port the service listens on (external facing)
+    targetPort: 80  # This is the port on your pods that the service will route traffic to
+    nodePort: 30008  # This is the NodePort exposed on all worker nodes
+
