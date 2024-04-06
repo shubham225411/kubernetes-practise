@@ -5,3 +5,12 @@
 # kind- type of object we want to create
 # metadata- it is data about the object like- its name, label etc
 # spec is dictiomnary
+
+apiVersion: v1
+kind: pod
+metadata:
+  name: nginx
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
