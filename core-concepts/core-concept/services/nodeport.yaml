@@ -8,8 +8,6 @@ spec:
     app:  nginx
   type: NodePort
   ports:
-  - protocol: TCP  # You can change protocol if needed (e.g., UDP)
-    port: 80  # This is the port the service listens on (external facing)
-    targetPort: 80  # This is the port on your pods that the service will route traffic to
-    nodePort: 30008  # This is the NodePort exposed on all worker nodes
-
+    - por: 80
+      targetPort: 80
+      nodePort: 30008
