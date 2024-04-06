@@ -15,7 +15,7 @@ spec: # this spec belongs to the replicaset
     spec: # this spec belongs to the pod
       containers:
       - name: busy-box
-        image: busybox
+        image: nginx
   replicas: 3
   selector:
     matchLabels:
