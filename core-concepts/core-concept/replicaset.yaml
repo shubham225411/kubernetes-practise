@@ -5,21 +5,21 @@ metadata:
   namespace: development
   labels:
     type: front-end
-spec: // this spec belongs to the replicaset
+spec: # this spec belongs to the replicaset
   template:
     metadata:
       name: my-pod
       namespace: development
       labels:
         type: front-end
-    spec: // this spec belongs to the pod
+    spec: # this spec belongs to the pod
       containers:
       - name: busy-box
         image: busybox
   replicas: 3
   selector:
     matchLabels:
-      type: front-end // this label is to tag the pods. NOTE- in replica set we can crteate replicas of pods without defind the pod template inside it, for that purpose we need selector here
+      type: front-end # this label is to tag the pods. NOTE- in replica set we can crteate replicas of pods without defind the pod template inside it, for that purpose we need selector here
 
 
 
