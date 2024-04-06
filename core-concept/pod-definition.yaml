@@ -1,0 +1,7 @@
+# there are 4 required field in pod-definition manifest file
+# apiVersion, kind, metadata, spec
+
+# apiVersion- this is the version of kubernets api we are using to create the object for pod is v1, for deployments  it is aps/v1
+# kind- type of object we want to create
+# metadata- it is data about the object like- its name, label etc
+# spec is dictiomnary
