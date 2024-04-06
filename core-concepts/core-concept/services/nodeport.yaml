@@ -6,6 +6,7 @@ metadata:
 spec:
   selector:
     app:  nginx
+  type: NodePort
   ports:
   - protocol: TCP  # You can change protocol if needed (e.g., UDP)
     port: 80  # This is the port the service listens on (external facing)
